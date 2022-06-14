@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="CRR.Az - Veb Saytların Hazırlanması" />
+    <meta name="description" content="CRR.Az - Veb Saytların Hazırlanması" />
+    <meta name="author" content="Crr.Az Company" />
+    <title>CCR.AZ - Veb Saytların Hazırlanması</title>
+    <link rel="shortcut icon" href="img/ico.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<!-- ==================== Start Loading ==================== -->
+<div class="loading">
+    <span>Y</span>
+    <span>Ü</span>
+    <span>K</span>
+    <span>L</span>
+    <span>Ə</span>
+    <span>N</span>
+    <span>İ</span>
+    <span>R</span>
+</div>
+<div id="preloader"></div>
+<!-- ==================== End Loading ==================== -->
+<!-- ==================== Start progress-scroll-button ==================== -->
+<div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
+<!-- ==================== End progress-scroll-button ==================== -->
+<!-- ==================== Start cursor ==================== -->
+<div class="mouse-cursor cursor-outer"></div>
+<div class="mouse-cursor cursor-inner"></div>
+<!-- ==================== End cursor ==================== -->
+<!-- ==================== Start Navbar ==================== -->
+<nav class="navbar navbar-expand-lg light" >
+    <div class="container-fluid">
+        <a class="logo imgLoad" href="index.html">
+            <img class="lozad" data-src="img/mainlogo-dark.webp" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Ana
+                        Səhifə</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Haqqımızda</a></li>
+                <li class="nav-item "><a class="nav-link" href="works.html" role="button" aria-haspopup="true" aria-expanded="false">Layihələr</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Xidmətlər</a></li>
+                <li class="nav-item "><a class="nav-link" href="blogs.html" role="button" aria-haspopup="true" aria-expanded="false">Bloq</a></li>
+                <li class="nav-item "><a class="nav-link" href="faq.html" role="button" aria-haspopup="true" aria-expanded="false">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Əlaqə</a></li>
+                <li class="nav-item d-none lang">
+                    <a href="#" class="nav-link langs"><img src="img/flag/azerbaijan.png" alt="">Az</a>
+                    <a href="#" class="nav-link langs"><img src="img/flag/russia.png" alt="">Ру</a>
+                    <a href="#" class="nav-link langs"><img src="img/flag/united-kingdom.png" alt="">En</a>
+                </li>
+            </ul>
+        </div>
+        <select class="selectpicker" data-width="fit" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+            <option class="option" data-content='Az'>Az</option>
+            <option class="option"  data-content='Ru'>Ru</option>
+            <option class="option"  data-content='En'>En</option>
+        </select>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<!-- <div class="sidebar-back"></div> -->
+<div class="vs-menu-wrapper position-re">
+    <div class="vs-menu-area">
+        <button class="vs-menu-toggle text-theme vs-active"><i class="fas fa-times-circle"></i></button>
+        <div class="mobile-logo">
+            <a class="logo imgLoad" href="index.html">
+                <img class="lozad" data-src="img/mainlogo-dark.webp" alt="logo" />
+            </a>
+        </div>
+        <div class="linec top left"></div>
+        <ul class="menu-items">
+            <li class="nav-item"><a class="nav-link vs-mobile-menu" href="index.html">Ana Səhifə</a></li>
+            <li class="nav-item"><a class="nav-link vs-mobile-menu" href="about.html">Haqqımızda</a></li>
+            <li class="nav-item "><a class="nav-link vs-mobile-menu" href="works.html" role="button" aria-haspopup="true" aria-expanded="false">Layihələr</a></li>
+            <li class="nav-item"><a class="nav-link vs-mobile-menu" href="services.html">Xidmətlər</a></li>
+            <li class="nav-item "><a class="nav-link vs-mobile-menu active" href="blogs.html" role="button" aria-haspopup="true" aria-expanded="false">Bloq</a></li>
+            <li class="nav-item "><a class="nav-link vs-mobile-menu" href="faq.html" role="button" aria-haspopup="true" aria-expanded="false">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link vs-mobile-menu" href="contact.html">Əlaqə</a></li>
+        </ul>
+
+        <select class="selectpicker" id="lang" data-width="fit" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+            <option class="option" data-content='Az'>Az</option>
+            <option class="option"  data-content='Ru'>Ru</option>
+            <option class="option"  data-content='En'>En</option>
+        </select>
+
+    </div>
+</div>
+ <!-- ==================== Start Slider ==================== -->
+
+
+    <!-- ==================== Start header ==================== -->
+    <header class="pages-header2 circle-bg valign sub-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cont mt-20 mb-20 text-center">
+                        <h1 class="color-font fw-700 fontsize">Məqalə</h1>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+        <div class="half sub-bg">
+            <div class="circle-color">
+                <div class="gradient-circle"></div>
+                <div class="gradient-circle two"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ==================== End header ==================== -->
+
+    <div class="main-content">
+        <!-- ==================== Start works ==================== -->
+     
+       
+        <section class="blog-pg single section-padding pt-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="images  pt-20 col-lg-12">
+                        <img class="rounded" src="img/blog/b1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container row2">
+               
+                <div class="row  justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="post">
+                            <div class="img imgLoad" >
+                                <img class="rounded" class="lozad" data-src="img/blog/2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-12">
+                                        <div class="cont px-4">
+                                            <h4 class="extra-title">Veb Saytların Hazırlanma Mərhələləri
+                                            </h4>
+                                            <div class="spacial">
+                                                <p>1. Saytın yaradılması üçün bütün tələblərin müəyyənləşdirilməsi
+                                                    Veb saytının inkişafı üçün qısa məlumatın doldurulması, əlavə sualların cavablandırılması, rəqiblərin veb saytlarının təhlilinin aparılması daxildir. Texniki tapşırığın müştəri tərəfindən göndərilməsi.</p>
+                                            </div>
+                                            <p>2. Toplanmış məlumatlar əsasında saytın yaradılmasıüçün ətraflı texniki tapşırıq tərtib olunur və gələcək saytın səhifələrinin prototipi hazırlanır.
+                                                Beləliklə, sayt səhifələrinin prototipləri gələcək sayt səhifələrinin quruluşunu əyani şəkildə qiymətləndirməyə imkan verir və Texniki Tapşırıqda bu səhifələrin ətraflı təsviri saytın məntiqini anlamağa imkan verir..</p>
+                                            <p>3. Sayt dizaynının yaradılması
+                                                Saytın yaradılması üçün Texniki tapşırıq-da təsvir olunan məlumatlara əsasən fərdi bir veb dizayn hazırlanır.
+                                            </p>
+                                            <p>
+                                                4. Saytın maketi (vertska)
+                                                Dizaynların şəkillər əsasında statik html səhifələrə çevrilməsi və saytın fərdi interaktiv elementlərinin - açılan pəncərələr, açılan siyahılar, qalereyalar, sürgülər və s. əyani görmək üçün hazırlanır.
+                                            </p>
+                                            <p>
+                                                5. Proqramlaşdırma
+                                                Saytın statik səhifələrini sayt idarəetmə sisteminə bağlamaq, sayt idarəetmə sistemini qurmaq, sayta dinamik məlumatların çıxmasını təşkil etmək.
+                                            </p>
+                                            <p>
+                                                6. Saytın sınaqdan keçirilməsi (testing)
+                                                Veb Saytın son sınaq və yoxlanışı üçün serverdə test mühiti yaradılır. Həm də bu mərhələdə saytı məzmunla doldurmaq üçün üzərində işlər davam etdirilir.
+                                            </p>
+                                            <p>
+                                                7. Saytın yerləşdirilməsi
+                                                Test mərhələsini uğurla keçmiş sayt hostingə yüklənir, poçt və interaktiv modullar konfiqurasiya olunur. Bura saytın googe bing yandex tərəfindən indekslənməsidə daxildir. Beləki sayt istifadəyə buraxıldıqda. robots.txt , sitemap.xml kimi seo ya önəmli kömək edən sazlamalar yaradılmalıdır.
+                                            </p>
+                                        </div>
+                                  
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== End works ==================== -->
+
+
+
+        <!-- ==================== Start Footer ==================== -->
+
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 col-sm-6 pt-20">
+                        <div class="item md-mb50">
+                            <div class="title">
+                                <h5></h5>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="icon pe-7s-map-marker"></span>
+                                    <div class="cont">
+                                        <h6>Ünvan</h6>
+                                        <p>Bakı,Azərbaycan</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon pe-7s-mail"></span>
+                                    <div class="cont">
+                                        <h6>Email</h6>
+                                        <p><a href="mailto:info@crr.az">info@crr.az</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="icon pe-7s-call"></span>
+                                    <div class="cont">
+                                        <h6>Əlaqə</h6>
+                                        <p>+994509954160</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-6 pt-20">
+                        <div class="item md-mb50">
+                            <div class="title">
+                                <h5>Keçidlər</h5>
+                            </div>
+                            <ul>
+                                <li><a href="blogs.html">Bloq</a></li>
+                                <li><a href="about.html">Haqqımızda</a></li>
+                                <li><a href="services.html">Qiymətlər</a></li>
+                                <li><a href="works.html">Layihələr</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 pt-20 ">
+                        <div class="item imgLoad ">
+                            <div class="logo">
+                                <img style="width:180px" class="lozad" data-src="img/mainlogo.webp" alt="">
+                            </div>
+                            <div class="social footercol">
+                                <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#0"><i class="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com/crr.az/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#0"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="copy-right">
+                                <p>© 2021.Bütün hüquqlar qorunur.<a href="index.html">crr.az</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ==================== End Footer ==================== -->
+
+    </div>
+
+
+
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/plugins/bootstrap.min.js"></script>
+<script src="js/plugins/wow.js"></script>
+<script src="js/plugins/simpleParallax.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.js"></script>
+<script>
+    const observer = lozad();
+    observer.observe();
+    $('.carousel').carousel({
+        interval: 3000
+    });
+</script>
+<script>
+    $( ".navbar-toggler").click(function() {
+        $(".vs-menu-wrapper").toggleClass("vs-body-visible");
+});
+$( ".vs-menu-toggle" ).click(function() {
+        $(".vs-menu-wrapper").removeClass("vs-body-visible");
+});
+
+</script>
+<script src="js/plugins/pace.min.js"></script>
+<script src="js/plugins/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
